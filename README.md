@@ -32,7 +32,7 @@ These credentials are the same you are using to connect on the web interface of 
 
 Just run the script to change the external IP address of your internet connexion.
 
-Links
+Dependency
 -----
 
 This script is using PhantomJS (http://phantomjs.org/).
