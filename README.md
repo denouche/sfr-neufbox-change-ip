@@ -39,4 +39,3 @@ This script is using PhantomJS (http://phantomjs.org/).
 
 The IP address is retrieved usgin http://ipecho.net/
 
-
