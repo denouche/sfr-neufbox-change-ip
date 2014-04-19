@@ -98,7 +98,7 @@ main()
     WAN_PASSWORD=$($PHANTOM $TMP/$FILE_WAN_PASSWORD)
     
     echo -n "Changing IP."
-    
+
     wget -q -O /dev/null \
          --load-cookies $COOKIES_FILE \
          --referer=http://$IP/network/wan \
