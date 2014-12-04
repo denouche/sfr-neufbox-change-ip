@@ -6,7 +6,7 @@ LIBS="./libs"
 PHANTOM="$LIBS/phantomjs-1.9.7-linux-x86_64/bin/phantomjs"
 TMP="./tmp"
 COOKIES_FILE="$TMP/cookies"
-GET_IP_URL="http://myip.leveugle.net"
+GET_IP_URL="http://checkip.dyndns.org"
 TEMPLATES_DIR="./templates"
 FILE_HASH="getHash.js"
 FILE_WAN_LOGIN="getCurrentWanLogin.js"
@@ -15,7 +15,7 @@ FILE_WAN_PASSWORD="getCurrentWanPassword.js"
 
 getCurrentIp ()
 {
-    wget -q -O - $GET_IP_URL
+    wget -q -O - $GET_IP_URL|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
 }
 
 waitfor () 
